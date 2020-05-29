@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		<meta charset="UTF-8"/>
+		<title>雪梨在线</title>
+		<style type="text/css">
+ 		*{
+ 			padding: 0;
+ 			margin: 0;
+ 		}
+ 		a{text-decoration:none;}
+ 		ul{list-style-type:none;}
+ 		.clear:after {
+    	content: '';
+    	display: block;
+    	height: 0;
+    	clear: both;}
+    	.header{height:101px;}
+    	.container{width:1200px;margin:0 auto;}
+    	.logo{width:170px;height:39px;float:left;padding-top:33px;margin-right:79px;}
+    	.nav li{
+    		float:left;
+    		width: 86px;
+    		height: 39px;
+            text-align: center;
+            margin-top: 8px;
+        	}
+        .nav{margin-top: 33px;float:left;}
+        .nav a{font-size:18px;color:rgba(5,5,5,1);}
+        .nav li:hover{border-bottom:2px solid rgba(0,164,255,1);}
+        .form{float:right;margin-top: 31px;margin-right:31px;}
+        .search{float:left;height:39px;width:339px;border:1px solid rgba(0,164,255,1);padding-left:19px;}
+        .submit{float:left;height:41px;border:1px solid rgba(0,164,255,1);width:51px;background: rgba(0,164,255,1) url(../image/search.png) no-repeat center center;}
+        .personal{float:right;margin-right:42px;margin-top:44px;}
+        .personal a{font-size:14px;color:rgba(102,102,102,1);}
+
+        .PHP{background:rgba(28,3,108,1);height:420px;}
+        .part{width:190px;height:392px;background:rgba(0,0,0,1);padding-bottom:28px;position: absolute;}        
+        .part li{font-size:14px;margin-left:20px;line-height: 41px;border:none;}
+        .part a{color:white;}
+        .part a:hover{color:rgba(0,180,255,1)}
+        .part span{float:right;margin-right:21px;}
+        .first{padding-top: 27px}
+        .photo{height:420px;float:left;position:relative;margin-left:30px;}
+
+
+        .ins{height:60px;background:rgba(255,255,255,1);box-shadow:0px 2px 3px 0px rgba(118,118,118,0.2);margin-top:8px;}
+        .jp li{float:left;border-right:1px solid rgba(191,191,191,1);width:132px;text-align:center;}
+        .jp{width:1105px;height:18px;font-size:16px;margin:21px 61px 21px 0px;}
+        .one{color:rgba(0,164,255,1);font-weight:bold}
+        .jp .final{border-right:none;}
+        .jp .change{border:none;float:right;}
+        .change a{color:rgba(0,164,255,1);font-weight:bold}
+
+        .push{float:left;margin-top:37px;font-size:20px;color:rgba(73,73,73,1);}
+        .all{float:right;margin-top:31px;}
+        .all a{font-size:12px;color:rgba(165,165,165,1);}
+        .lesson{width:1200px;height:77px;}
+
+        .study li{width:228px;height:270px;background:rgba(255,255,255,1);box-shadow:0px 2px 5px 0px rgba(118,118,118,0.5);float:left;margin-left:10px;margin-bottom:15px;}
+        .study{height:600px;}
+        .ps{height:115px;width:228px;}
+        .neirong{margin:24px auto;width:185px;height:65px;}
+        .ps-top{font-size:14px;color:rgba(5,5,5,1);margin-bottom:18px;}
+        .ps-bottom{font-size:12px;}
+        .ps-bottom span{color:rgba(255,124,45,1);}
+
+		.pro{width:1200px;margin:0 auto;}
+		.quanbu{float:right;margin-top:21px;width:48px;height:13px;font-size:12px;}
+		.quanbu a{font-size:12px;color:rgba(165,165,165,1);}
+		.qianduan{float:left;margin-top:25px;font-size:20px;color:rgba(73,73,73,1);margin-right:291px;}
+		.mm li{width:228px;height:270px;background:rgba(255,255,255,1);box-shadow:0px 2px 5px 0px rgba(118,118,118,0.5);float:left;margin-left:10px;margin-bottom:15px;}
+		.second{height:77px;}
+		.second ul{float:left;width:327px;height:17px;font-size:16px;}
+		.second li{float:left;margin-top:25px;width:80px;}
+		.second li a{color:rgba(0,0,0,1)}
+		.second li a:hover{color:rgba(0,164,255,1);}
+
+		.mm li{float:left;}
+		.mm{height:273px;}
+
+		.third{width:1200px ;height:77px;}
+		.third p{float:left;}
+
+		.forth li{float:left;margin-right:10px;}
+		.forth{height:320px;}
+
+		.fifth{width:235px;height:123px;position:absolute;bottom:0;background:rgba(0,0,0,0.4);}
+		.forth li{position:relative;}
+		.edu1{position:absolute;left:25px;top:99px;font-size:30px;font-weight:bold;color:rgba(249,225,3,1);line-height:36px;}
+		.edu2{position:absolute;left:25px;bottom:159px;font-size:30px;font-weight:bold;color:rgba(255,255,255,1);line-height:36px;}
+		.edu3{position:absolute;left:28px;bottom:122px;border:solid 1px rgba(249,225,3,1);width:87px;height:25px;}
+		.edu4 a{font-size:13px;color:rgba(249,225,3,1);}
+		.edu4{margin:3px auto;text-align:center;}
+		
+		.content{margin:21px 39px 19px 29px;width:175px;height:69px;}
+		.content-top span{font-size:18px;color:rgba(255,255,255,1);}
+		.content-top{padding-bottom: 12px}
+		.content{font-size:12px;color:rgba(255,255,255,1);}
+
+		.footer{height:417px;background:rgba(255,255,255,1);border-top:1px solid color:rgba(165,165,165,1);margin-top: 73px}
+		.footer{width:1200px;margin:0 auto;}
+		.container-left{float:left;}
+		.footer ul{margin-top:129px;margin-left:152px;}
+
+		.container-left img{margin-top:124px;}
+		.container-left{width:472px;}
+		.line{margin-top:35px;width:372px;height:12px;font-size:12px;color:rgba(102,102,102,1);}
+		.bigo{width:120px;height:36px;margin-top: 33px;border:solid rgba(0,164,255,1);}
+		.bigo a{color:rgba(0,164,255,1);}
+		.bigo p{text-align:center;margin:10px auto;}
+		
+		.footer ul{float:right;}
+		.container-right{width:530px;}
+		.footer li{font-size:12px;line-height:21px;}
+		.footer li a{color:rgba(51,51,51,1);}
+		.footer .big{font-size:16px;color:rgba(51,51,51,1);line-height:21px;margin-bottom:15px;}
+		
+ 		</style>
+		</head>
+		<body>
+			<div class="header">
+				<div class="container">
+				<img src="../image/logo.png" class="logo">
+				<ul class="nav clear">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">课程</a></li>
+					<li><a href="#">职业规划</a></li>
+				</ul>
+				<p class="personal"><a href="#">个人中心</a></p>
+				<form class="form clear fr">
+                <input type="text" placeholder="输入关键词" class="search" />
+                <input type="button" class="submit" />
+            	</form>
+				</div>
+			</div>
+			<div class="PHP">
+				<div class="container">
+					<div class="photo">
+						<img src="../image/banner2.png" />
+					</div>
+				
+				
+					<ul class="part" >
+						<li class="first"><a href="#">前端开发<span>></span></a></li>
+						<li ><a href="#">后期开发<span>></span></a></li>
+						<li><a href="#">移动开发<span>></span></a></li>
+						<li><a href="#">人工智能<span>></span></a></li>
+						<li><a href="#">商业预测<span>></span></a></li>
+						<li><a href="#">云计算&大数据<span>></span></a></li>
+						<li><a href="#">运维&从测试<span>></span></a></li>
+						<li><a href="#">UI设计<span>></span></a></li>
+						<li class="last"><a href="#">产品<span>></span></a></li>
+					</ul>
+
+					
+					
+				</div>
+			</div>
+
+				<div class="container ins">
+					<ul class="jp clear">
+						<li class="one">精品推荐</li>
+						<li>JQuery</li>
+						<li>Spark</li>
+						<li>MySQL</li>
+						<li>JavaWeb</li>
+						<li>MySQL</li>
+						<li class="final">JavaWeb</li>
+						<li class="change"><a href="#">修改兴趣</a></li>
+						
+					</ul>
+				</div>
+			<div class="total">
+				<div class="container">
+				<div class="lesson">
+				<p class="push">精品推荐</p>
+				<p class="all"><a href="#">查看全部</a></p>
+				</div>
+				<div class="study">
+				<ul>
+					<li>
+						<img src="../image/one.png" />
+						<div class="ps">
+							<div class="neirong"><p class="ps-top">Think PHP5.0博客系统实战项目演练</p><p class="ps-bottom"><span>高级 </span>. 1125人正在学习</p></div>
+						</div>
+					</li>
+					<li>
+						<img src="../image/two.png" />
+						<div class="ps">
+							<div class="neirong"><p class="ps-top">Android网络图片加载框架详解</p><p class="ps-bottom"><span>高级 </span>. 1125人正在学习</p></div>
+						</div>
+					</li>
+					<li>
+						<img src="../image/three.png" />
+						<div class="ps">
+							<div class="neirong"><p class="ps-top">Angular 2 最新框架+主流技术+项目实战</p><p class="ps-bottom"><span>高级 </span>. 1125人正在学习</p></div>
+						</div>
+					</li>
+					<li>
+						<img src="../image/four.png" />
+						<div class="ps">
+							<div class="neirong"><p class="ps-top">Android Hybrid APP开发实战 H5+原生</p><p class="ps-bottom"><span>高级 </span>. 1125人正在学习</p></div>
+						</div>
+					</li>
+					<li>
+						<img src="../image/four.png" />
+						<div class="ps">
+							<div class="neirong"><p class="ps-top">Android Hybrid APP开发实战 H5+原生</p><p class="ps-bottom"><span>高级 </span>. 1125人正在学习</p></div>
+						</div>
+					</li>
+					<li>
+						<img src="../image/one.png" />
+						<div class="ps">
+							<div class="neirong"><p class="ps-top">Think PHP5.0博客系统实战项目演练</p><p class="ps-bottom"><span>高级 </span>. 1125人正在学习</p></div>
+						</div>
+					</li>
+					<li>
+						<img src="../image/two.png" />
+						<div class="ps">
+							<div class="neirong"><p class="ps-top">Android网络图片加载框架详解</p><p class="ps-bottom"><span>高级 </span>. 1125人正在学习</p></div>
+						</div>
+					</li>
+					<li>
+						<img src="../image/three.png"/>
+						<div class="ps">
+							<div class="neirong"><p class="ps-top">Angular 2 最新框架+主流技术+项目实战</p><p class="ps-bottom"><span>高级 </span>. 1125人正在学习</p></div>
+						</div>
+					</li>
+					<li>
+						<img src="../image/four.png" />
+						<div class="ps">
+							<div class="neirong"><p class="ps-top">Android Hybrid APP开发实战 H5+原生</p><p class="ps-bottom"><span>高级 </span>. 1125人正在学习</p></div>
+						</div>
+					</li>
+					<li>
+						<img src="../image/four.png" />
+						<div class="ps">
+							<div class="neirong"><p class="ps-top">Android Hybrid APP开发实战 H5+原生</p><p class="ps-bottom"><span>高级 </span>. 1125人正在学习</p></div>
+						</div>
+					</li>
+				</ul>
+				</div>
+				
+				
+			
+				</div>
+			</div>
+			
+				<div class="pro">
+					<div class="container">
+					<div class="second">
+					<p class="qianduan">前端开发工程师</p>
+					<ul>
+						<li><a href="#">热门</a></li>
+						<li><a href="#">初级</a></li>
+						<li><a href="#">中级</a></li>
+						<li><a href="#">高级</a></li>
+					</ul>
+					<p class="quanbu"><a href="#">查看全部</a></p>
+					</div>
+					<ul class="mm">
+					<li>
+						<img src="../image/five.png" />
+						<div class="ps">
+							<div class="neirong"><p class="ps-top">微软人工智能-数据分析平台</p><p class="ps-bottom"><span>高级 </span>. 1125人正在学习</p></div>
+						</div>
+					</li>
+					<li>
+						<img src="../image/six.png" />
+						<div class="ps">
+							<div class="neirong"><p class="ps-top">Unity Profiler</p><p class="ps-bottom"><span>高级 </span>. 1125人正在学习</p></div>
+						</div>
+					</li>
+					<li>
+						<img src="../image/seven.png" />
+						<div class="ps">
+							<div class="neirong"><p class="ps-top">Cocos2d-x 引擎源码中的纹理优化</p><p class="ps-bottom"><span>高级 </span>. 1125人正在学习</p></div>
+						</div>
+					</li>
+					<li>
+						<img src="../image/eight.png" />
+						<div class="ps">
+							<div class="neirong"><p class="ps-top">Kami2首页界面切换效果</p><p class="ps-bottom"><span>高级 </span>. 1125人正在学习</p></div>
+						</div>
+					</li>
+					<li>
+						<img src="../image/nine.png" />
+						<div class="ps">
+							<div class="neirong"><p class="ps-top">Android Hybrid APP开发实战 H5+原生！</p><p class="ps-bottom"><span>高级 </span>. 1125人正在学习</p></div>
+						</div>
+					</li>
+					
+				
+					</ul>
+
+					</div>
+				</div>
+			<div class="niu">
+				<div class="container">
+					<div class="third">
+						<p>牛人推荐</p>
+					</div>
+					<ul class="forth">
+					<li>
+						<img src="../image/teach.png" />
+						<p class="edu1">毕业季</p>
+						<p class="edu2">带你华丽转身</p>
+						<div class="edu3"><p class="edu4"><a href="#">点击查看</a></p></div>
+					</li>
+					<li>
+						<img src="../image/teacher1.png" />
+						<div class="fifth"><div class="content"><p class="content-top"><span>闻老师</span>  大数据</p><p class="content-bottom">高级互联网软件工程师，曾担任某物流公司CRM开发团队TL。多年JAVAEE、大数据领域开发……</P></div></div>
+					</li>
+					<li>
+						<img src="../image/teacher2.png" />
+						<div class="fifth"><div class="content"><p class="content-top"><span>汪老师</span>  前端</p><p class="content-bottom">高级软件架构师，全线开发，多年大型项目管理经验。对WebComponents、Node.js……</P></div></div>
+					</li>
+					<li>
+						<img src="../image/teacher3.png" />
+						<div class="fifth"><div class="content"><p class="content-top"><span>江老师</span>  前端</p><p class="content-bottom">多年软件开发经验和教学经验，精通html，css，js，asp.net等编程语言和数据库系统</P></div></div>
+					</li>
+				</ul>
+				</div>
+			</div>
+			
+			<div class="footer">
+				
+				
+				
+					<div class="container-left">
+						<img src="../image/logo.png"/>
+						<p class="line">致力于普及中国最好的教育，与中国一流大学和机构合作提供在线教程</p>
+						<div class="bigo"><p><a href="#">下载APP</a></p></div>
+					</div>
+				
+						<ul class="list1">
+							<li class="big">合作伙伴</li>
+							<li><a href="#">合作机构</a></li>
+							<li><a href="#">合作导师</a></li>
+						</ul>
+						<ul class="list2">
+							<li class="big">新手指南</li>
+							<li><a href="#">如何注册</a></li>
+							<li><a href="#">如何选课</a></li>
+							<li><a href="#">如何拿到毕业证</a></li>
+							<li><a href="#">学分是什么</a></li>
+							<li><a href="#">考试未通过怎么办</a></li>
+							
+						</ul>
+						<ul class="list3">
+							<li class="big">关于雪梨网</li>
+							<li><a href="#">关于</a></li>
+							<li><a href="#">管理团队</a></li>
+							<li><a href="#">工作机会</a></li>
+							<li><a href="#">客户服务</a></li>
+							<li><a href="#">帮助</a></li>
+							
+						</ul>
+				
+			</div>
+			
+				
+				
+			
+		
+				
+		</body>
+    </html>
